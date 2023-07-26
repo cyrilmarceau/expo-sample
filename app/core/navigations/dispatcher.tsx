@@ -1,7 +1,8 @@
+import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { useAppSelector } from '@redux/hooks';
 import { AuthStack, HomeStack } from './stacks';
 import { screens } from './routes';
-import { useAppSelector } from '@redux/hooks';
 
 const Stack = createNativeStackNavigator();
 
@@ -14,7 +15,8 @@ const Dispatcher = () => {
         <Stack.Navigator
             screenOptions={{
                 headerShown: false,
-            }}>
+            }}
+        >
             {isAuth ? (
                 <Stack.Screen name={screens.HOMESTACK} component={HomeStack} />
             ) : (

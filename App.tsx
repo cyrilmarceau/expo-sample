@@ -1,3 +1,4 @@
+import React from 'react';
 import { RnpTheme } from '@constants/Theme';
 import Dispatcher from '@navigations/dispatcher';
 import { NavigationContainer } from '@react-navigation/native';
