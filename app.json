@@ -1,0 +1,31 @@
+{
+    "expo": {
+        "name": "expo-sample",
+        "slug": "expo-sample",
+        "version": "1.0.0",
+        "orientation": "portrait",
+        "icon": "./app/core/assets/icon.png",
+        "userInterfaceStyle": "light",
+        "splash": {
+            "image": "./app/core/assets/splash.png",
+            "resizeMode": "contain",
+            "backgroundColor": "#ffffff"
+        },
+        "assetBundlePatterns": ["**/*"],
+        "ios": {
+            "supportsTablet": true
+        },
+        "android": {
+            "adaptiveIcon": {
+                "foregroundImage": "./app/core/assets/adaptive-icon.png",
+                "backgroundColor": "#ffffff"
+            }
+        },
+        "web": {
+            "favicon": "./app/core/assets/favicon.png"
+        },
+        "experiments": {
+            "tsconfigPaths": true
+        }
+    }
+}
