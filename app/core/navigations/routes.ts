@@ -1,13 +1,4 @@
-type ScreensName = 'AuthStack' | 'Login' | 'Signup' | 'HomeStack' | 'Home';
-
-type Screens = {
-    [key in Uppercase<ScreensName>]: ScreensName;
-};
-
-type Route = {
-    name: ScreensName;
-    title: string;
-};
+import type { Route, Screens } from './types';
 
 export const screens: Screens = {
     AUTHSTACK: 'AuthStack',
